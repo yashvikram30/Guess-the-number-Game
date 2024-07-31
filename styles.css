@@ -1,0 +1,103 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    color: #ecf0f1;
+}
+
+.game-container {
+    background: rgba(44, 62, 80, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 460px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #bdc3c7;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% - 24px);
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+input[type="number"]::placeholder {
+    color: #95a5a6;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    color: #ecf0f1;
+}
+
+button#submitGuess {
+    background: linear-gradient(135deg, #1e8449, #145a32);
+}
+
+button#submitGuess:hover {
+    background: linear-gradient(135deg, #145a32, #1e8449);
+    transform: scale(1.05);
+}
+
+button#resetGame {
+    background: linear-gradient(135deg, #922b21, #641e16);
+}
+
+button#resetGame:hover {
+    background: linear-gradient(135deg, #641e16, #922b21);
+    transform: scale(1.05);
+}
+
+#message {
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p, input[type="number"], button {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
